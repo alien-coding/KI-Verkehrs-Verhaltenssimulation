@@ -1,0 +1,502 @@
+﻿v;v_left;v_front;d_left;d_front;type_left;type_front;radius_curve(m);slope_street;street_type;time;weather;type_vehicle;speed_limit(km/h);action
+38;40;31;-155;68;car;car;4761;flat;autobahn;night;dry;car;250;lane_change
+23,5;23,5;22;-147;40;car;truck;1556;flat;autobahn;day;dry;truck;250;continue
+24,5;36,5;22;-28;48;car;truck;3488;flat;country_road (separated);dusk;rain;motorcycle;100;continue
+33;36;31;-26;59;truck;motorcycle;5576;flat;country_road (separated);dawn;rain;car;120;continue
+28;41;22;-141;52;motorcycle;truck;2340;flat;country_road (separated);night;dry;motorcycle;120;lane_change
+34;36;31,5;-108;61;car;car;5379;flat;country_road (separated);day;dry;motorcycle;120;continue
+26;34;23;-179;51;motorcycle;truck;5133;decending;autobahn;day;fog;car;130;continue
+28,5;37,5;22;-198;48;car;truck;3004;decending;country_road (separated);dawn;dry;car;100;decelerate
+23;28;31,5;-82;42;car;car;3967;flat;autobahn;dawn;dry;truck;80;continue
+36;43;32;-143;53;truck;car;3043;decending;country_road (separated);day;dry;car;100;continue
+26;26;21,5;-53;48;car;truck;4238;flat;country_road (separated);day;dry;car;120;lane_change
+30;36;23;-128;55;truck;truck;5064;flat;autobahn;day;dry;car;250;lane_change
+25;39;30,5;-3;42;car;car;2667;flat;country_road (separated);day;dry;truck;100;continue
+26;29;21,5;-153;45;car;truck;4227;flat;country_road (separated);night;dry;car;120;lane_change
+26,5;26,5;20;-107;50;car;truck;1474;ascending;country_road (separated);dawn;dry;car;100;decelerate
+22,5;26,5;22,5;-49;41;motorcycle;truck;715;decending;country_road (separated);dusk;dry;truck;120;continue
+35,5;38;31,5;-22;41;car;sportscar;5888;flat;autobahn;dawn;dry;car;80;continue
+22,5;36,5;22,5;-25;39;car;truck;3685;flat;autobahn;day;dry;truck;80;continue
+29;41;22,5;-184;54;car;truck;4723;flat;country_road (separated);day;dry;car;120;lane_change
+22,5;24,5;31;-68;41;car;car;1042;flat;autobahn;night;dry;truck;130;continue
+23;24;31;-132;46;car;car;1874;flat;autobahn;day;dry;truck;100;continue
+28,5;40,5;23;-19;52;car;truck;1508;flat;country_road (separated);night;fog;car;120;accelerated_lane_change
+35;39;30,5;-82;52;truck;sportscar;5309;flat;country_road (separated);night;dry;car;100;continue
+33,5;33,5;31,5;-79;63;car;car;4653;ascending;autobahn;day;dry;motorcycle;130;continue
+23,5;33,5;23;-198;41;car;truck;2380;flat;country_road (separated);night;rain;truck;120;continue
+35;35;28,5;-56;56;sportscar;car;2640;flat;country_road (separated);day;dry;car;100;continue
+23;23;31;-57;40;car;car;1757;flat;autobahn;night;rain;truck;130;continue
+27,5;35,5;23;0;49;car;truck;3271;flat;country_road (separated);day;dry;car;100;accelerated_lane_change
+22;26;22,5;-123;37;car;truck;5511;flat;country_road (separated);dusk;dry;truck;100;continue
+26;30;23;-120;43;car;truck;2312;flat;country_road (separated);night;dry;car;100;continue
+35;35;30;-48;48;car;car;1462;flat;country_road (separated);night;dry;car;100;continue
+37,5;34;30,5;-4;58;car;car;2666;flat;country_road (separated);dawn;dry;car;120;continue
+23,5;38,5;22;-2;38;car;truck;4226;flat;country_road (separated);day;dry;truck;120;continue
+33;42;31;-125;61;car;sportscar;3706;ascending;country_road (separated);night;dry;car;120;continue
+29,5;41,5;23;-54;57;car;truck;3952;decending;country_road (separated);day;dry;car;120;accelerated_lane_change
+23;35;32;-34;41;truck;car;3774;flat;country_road (separated);dusk;dry;truck;120;continue
+28,5;34,5;21,5;-196;51;car;truck;863;flat;country_road (separated);dawn;rain;car;120;decelerate
+28,5;31,5;23;-36;52;car;truck;1723;decending;country_road (separated);night;rain;car;120;decelerate
+32,5;40;28;-127;52;car;car;4704;decending;country_road (separated);day;rain;car;100;continue
+26;27;22;-174;51;car;truck;5302;ascending;country_road (separated);day;dry;car;120;continue
+25,5;35,5;22,5;-135;46;car;truck;2155;flat;country_road (separated);night;dry;car;120;continue
+27;32;22,5;-153;46;truck;truck;2670;flat;country_road (separated);day;rain;motorcycle;120;decelerate
+26;33;21,5;-173;44;truck;truck;1967;flat;country_road (separated);dusk;rain;car;120;decelerate
+23;27;19,5;-91;40;car;truck;2575;ascending;country_road (separated);night;rain;car;100;continue
+26,5;29,5;20,5;-194;47;car;truck;3074;ascending;country_road (separated);dusk;dry;car;100;lane_change
+24;28;22,5;-6;43;truck;truck;4392;flat;country_road (separated);day;rain;truck;100;continue
+32;41;28,5;-191;53;motorcycle;car;3121;flat;country_road (separated);day;dry;car;120;continue
+34,5;40,5;32;-19;63;sportscar;car;5292;ascending;country_road (separated);day;dry;car;120;continue
+24,5;26,5;22;-159;47;car;truck;1423;flat;country_road (separated);dusk;dry;sportscar;120;continue
+29;42;23,5;-73;50;car;truck;2128;flat;autobahn;night;rain;car;130;decelerate
+28;35;22;-48;48;car;truck;4870;decending;country_road (separated);night;rain;car;100;decelerate
+29;32;22,5;-136;51;car;truck;3275;flat;country_road (separated);dusk;dry;car;100;decelerate
+27,5;40,5;22,5;-196;49;car;truck;5701;flat;autobahn;dawn;dry;car;100;decelerate
+24;38;22;-52;47;car;truck;5305;flat;autobahn;day;dry;truck;250;continue
+34,5;45;29;-173;53;car;car;5022;flat;country_road (separated);night;dry;car;100;continue
+38,5;40;32;-24;64;truck;car;3737;flat;country_road (separated);day;dry;car;120;continue
+23;29;20;-3;38;car;truck;1849;ascending;country_road (separated);day;dry;car;120;accelerated_lane_change
+23;24;22,5;-34;37;car;truck;3538;flat;country_road (separated);dusk;rain;truck;100;continue
+22,5;30,5;22,5;-134;41;car;truck;1256;flat;autobahn;dusk;dry;truck;250;continue
+23;26;22,5;-25;46;car;truck;3260;flat;country_road (separated);day;rain;truck;120;continue
+33;43;30,5;-192;56;truck;car;1583;flat;country_road (separated);day;dry;sportscar;120;continue
+33,5;32;28;-131;53;car;car;5164;ascending;country_road (separated);day;dry;car;100;continue
+24,5;35,5;23;-95;46;car;truck;1052;flat;country_road (separated);day;dry;truck;120;continue
+23;34;31,5;-2;42;sportscar;car;4584;flat;country_road (separated);day;rain;truck;120;continue
+25,5;36,5;22;-161;49;car;truck;4387;ascending;autobahn;day;dry;car;250;continue
+32;37;27,5;-61;53;car;car;3523;ascending;country_road (separated);dawn;dry;car;100;continue
+24,5;28,5;22,5;-50;44;car;truck;5681;flat;autobahn;night;rain;car;250;continue
+29;38;22,5;-166;52;motorcycle;truck;5145;flat;country_road (separated);day;rain;car;100;decelerate
+26,5;28,5;20;-9;45;car;truck;2577;ascending;country_road (separated);dawn;dry;car;100;accelerated_lane_change
+27,5;36,5;23;-60;48;motorcycle;truck;3207;flat;country_road (separated);day;dry;car;100;decelerate
+34;38;28,5;-102;62;car;car;3918;ascending;autobahn;day;dry;car;130;continue
+22;32;22,5;-178;37;car;truck;1301;flat;autobahn;dusk;dry;truck;250;continue
+25;38;21,5;-67;45;car;truck;3602;flat;autobahn;day;dry;car;80;continue
+31,5;34;28;-160;55;truck;car;2323;flat;country_road (separated);day;dry;car;100;continue
+33,5;37,5;30,5;-108;59;car;car;1799;flat;country_road (separated);day;dry;car;120;continue
+37,5;45;31,5;-3;64;car;motorcycle;5066;ascending;country_road (separated);night;dry;car;120;continue
+25,5;31;23;-147;47;truck;truck;1359;flat;autobahn;dawn;dry;car;80;continue
+29,5;37,5;23;-134;50;sportscar;truck;3498;flat;autobahn;dusk;dry;car;130;lane_change
+26,5;27,5;20,5;-138;47;truck;truck;4652;ascending;country_road (separated);day;dry;car;120;lane_change
+36;47;31,5;-94;62;truck;car;4553;flat;autobahn;day;dry;car;250;continue
+33;36;30;-19;46;car;car;2837;flat;autobahn;night;fog;car;80;continue
+27,5;39,5;22,5;-111;47;car;truck;1772;flat;autobahn;day;rain;car;250;decelerate
+34,5;34;27,5;-160;50;car;car;5446;ascending;country_road (separated);dusk;dry;car;100;continue
+26;36;22;-83;46;car;truck;3383;flat;country_road (separated);dusk;dry;car;100;lane_change
+38,5;46;32;-68;63;car;car;2177;flat;country_road (separated);night;dry;car;120;continue
+37;42;32;-109;65;car;car;3411;flat;country_road (separated);day;dry;sportscar;120;continue
+24,5;25,5;21,5;-63;40;motorcycle;truck;4894;ascending;country_road (separated);day;dry;car;100;continue
+23;30;28;-81;42;truck;car;1302;decending;country_road (separated);night;dry;truck;120;continue
+35;46;29;-42;60;motorcycle;car;5214;decending;autobahn;dawn;rain;car;250;accelerated_lane_change
+36;35;29;-70;64;car;car;5459;flat;autobahn;day;dry;car;130;lane_change
+22;27;21;-113;39;car;truck;1758;ascending;country_road (separated);night;dry;truck;100;continue
+24;26;21,5;-58;40;motorcycle;truck;2336;decending;country_road (separated);night;dry;car;100;continue
+27,5;36,5;22;-25;49;car;truck;5001;flat;autobahn;night;dry;car;130;accelerated_lane_change
+22;32;19,5;-184;40;car;truck;4043;ascending;autobahn;night;dry;car;250;continue
+37;42;32;-125;58;car;motorcycle;3550;ascending;country_road (separated);day;dry;car;120;continue
+24,5;37,5;22;-117;43;car;truck;1737;decending;country_road (separated);day;dry;motorcycle;100;continue
+37;39;31;-138;52;car;motorcycle;4008;flat;country_road (separated);dusk;dry;car;100;continue
+35;36;29;-73;59;car;car;2596;decending;autobahn;dawn;dry;car;250;lane_change
+23,5;24,5;22,5;-169;40;truck;truck;3146;decending;autobahn;day;dry;truck;130;continue
+35,5;37;32;-27;62;car;car;4667;flat;country_road (separated);night;dry;car;120;continue
+28,5;38,5;22,5;-7;47;motorcycle;truck;1551;flat;country_road (separated);day;dry;motorcycle;120;accelerated_lane_change
+32;32;28;-11;59;car;car;2949;flat;country_road (separated);night;dry;car;120;continue
+33,5;45,5;29,5;-3;58;car;car;3063;flat;country_road (separated);night;rain;car;120;continue
+27;30;22,5;-76;49;truck;truck;3690;flat;autobahn;dawn;dry;car;130;lane_change
+33;43;30,5;-140;55;truck;car;3836;flat;country_road (separated);night;dry;motorcycle;120;continue
+22,5;22,5;29;-136;38;car;car;4589;decending;autobahn;night;dry;truck;250;continue
+25;35;22;-58;41;car;truck;3029;flat;autobahn;day;dry;car;80;continue
+36,5;47;29,5;-81;60;motorcycle;car;4685;ascending;country_road (separated);dusk;dry;sportscar;120;decelerate
+27,5;38,5;22;-195;47;car;truck;1290;flat;country_road (separated);day;dry;car;120;lane_change
+23;27;28,5;-3;43;truck;car;1704;flat;autobahn;night;dry;truck;100;continue
+34;46;28;-120;58;truck;car;2875;flat;country_road (separated);night;dry;car;120;decelerate
+31;38;29;-53;58;car;car;984;flat;country_road (separated);day;rain;car;120;continue
+31,5;43,5;29;-198;60;truck;car;3796;flat;country_road (separated);night;dry;car;120;continue
+25;38;22;-154;47;car;truck;1611;flat;country_road (separated);day;dry;car;120;continue
+37,5;34;34;-130;50;car;motorcycle;1846;flat;country_road (separated);night;dry;sportscar;100;continue
+34,5;32;28;-80;55;truck;car;4427;flat;autobahn;day;dry;car;100;continue
+33;34;29;-20;56;car;car;2147;flat;autobahn;day;dry;car;130;continue
+38,5;43;34,5;-52;66;car;sportscar;2269;ascending;country_road (separated);night;dry;car;120;continue
+36;41;30;-134;63;motorcycle;car;4949;flat;country_road (separated);night;dry;car;120;decelerate
+35,5;45;30,5;-160;57;car;car;2791;flat;country_road (separated);day;dry;car;120;continue
+37,5;37,5;31,5;-190;70;car;car;2996;decending;autobahn;night;dry;car;130;continue
+24;26;26,5;-75;41;car;car;1468;ascending;country_road (separated);day;dry;truck;120;continue
+24,5;32,5;22;-77;43;truck;truck;2683;flat;country_road (separated);day;dry;truck;100;continue
+39,5;38;30;-117;63;car;car;1070;decending;country_road (separated);night;dry;sportscar;120;decelerate
+33,5;38,5;29;-102;61;truck;car;752;decending;country_road (separated);day;dry;car;120;continue
+25,5;40,5;21,5;-176;44;car;truck;4775;flat;autobahn;dusk;dry;car;250;lane_change
+25,5;38,5;22,5;-65;47;truck;truck;4063;decending;country_road (separated);day;rain;sportscar;100;continue
+26,5;35,5;22,5;-125;49;car;truck;4024;flat;country_road (separated);day;dry;sportscar;100;continue
+26;35;20,5;-110;47;car;truck;5035;ascending;autobahn;dusk;dry;sportscar;250;lane_change
+34,5;39;30;-63;53;car;car;3049;flat;country_road (separated);day;dry;car;100;continue
+22,5;35,5;22,5;-42;39;sportscar;truck;2803;flat;country_road (separated);day;dry;truck;100;continue
+38;36;35;-175;58;car;sportscar;2147;decending;country_road (separated);dusk;dry;car;120;continue
+40,5;46;34;-59;68;truck;motorcycle;2287;flat;country_road (separated);day;dry;motorcycle;120;continue
+24;23;20;-105;45;car;truck;3648;ascending;autobahn;day;dry;motorcycle;100;lane_change
+33;32;30;-73;51;sportscar;car;4334;flat;country_road (separated);dusk;dry;car;100;continue
+27,5;30,5;22,5;-138;51;car;truck;3428;flat;autobahn;day;dry;car;250;lane_change
+26,5;34,5;22;-167;49;sportscar;truck;1638;flat;country_road (separated);day;dry;car;100;lane_change
+24,5;24,5;21;-195;44;car;truck;3291;ascending;country_road (separated);dawn;rain;car;100;continue
+22,5;26,5;22;-193;41;truck;truck;2735;flat;country_road (separated);day;dry;truck;120;continue
+23,5;33,5;29,5;-61;39;car;car;2574;ascending;autobahn;day;dry;truck;130;continue
+26;27;22;-164;40;car;truck;5126;flat;autobahn;night;dry;car;80;continue
+29;41;23;-119;53;car;truck;3036;flat;country_road (separated);dusk;dry;car;120;lane_change
+33,5;40,5;30,5;-192;60;car;car;5439;decending;autobahn;day;dry;car;250;continue
+41;52;35;-189;70;car;motorcycle;4301;decending;autobahn;day;dry;car;130;continue
+27;29;22;-122;46;car;truck;4415;ascending;country_road (separated);day;dry;car;120;lane_change
+34,5;33;29,5;-196;48;car;car;4334;flat;country_road (separated);dawn;rain;car;100;continue
+26;35;21;-180;46;car;truck;4717;ascending;country_road (separated);day;dry;car;120;lane_change
+27,5;30,5;21;-145;50;car;truck;4871;ascending;country_road (separated);night;dry;car;100;decelerate
+24;32;22,5;-190;40;car;truck;1036;flat;autobahn;night;dry;truck;250;continue
+26,5;31,5;22,5;-157;48;car;truck;878;flat;country_road (separated);dawn;dry;car;120;continue
+22,5;24,5;20;-154;42;truck;truck;2064;ascending;country_road (separated);day;dry;truck;120;continue
+28;39;22;-142;55;car;truck;5148;flat;country_road (separated);day;dry;car;120;lane_change
+25;37;29,5;-34;40;car;car;4144;flat;country_road (separated);night;dry;truck;100;continue
+24,5;27,5;31;-197;39;car;car;4367;flat;country_road (separated);day;dry;truck;120;continue
+27,5;30,5;22,5;-16;48;car;truck;4007;decending;country_road (separated);day;dry;motorcycle;120;decelerate
+24,5;33,5;22,5;-63;46;car;truck;5775;flat;autobahn;day;dry;truck;250;continue
+22,5;28,5;22;-94;36;truck;truck;4020;decending;country_road (separated);dusk;dry;truck;120;continue
+22;27;30;-94;37;car;car;3266;decending;autobahn;day;dry;truck;250;continue
+21;27;20,5;-142;39;car;truck;5101;ascending;country_road (separated);night;dry;truck;120;continue
+22,5;22,5;20,5;-68;40;car;truck;5560;ascending;country_road (separated);dawn;rain;truck;100;continue
+33;32;30,5;-173;51;truck;car;5002;flat;country_road (separated);dusk;dry;car;100;continue
+36,5;47,5;31;-101;67;car;car;5180;flat;autobahn;day;dry;car;250;lane_change
+25;37;23;-113;40;truck;truck;5416;decending;autobahn;night;dry;car;100;continue
+35,5;42,5;31;-52;61;car;car;1088;flat;autobahn;night;rain;car;130;continue
+33;35;28;-142;55;car;car;2362;flat;country_road (separated);night;rain;car;120;decelerate
+26;32;21;-46;45;car;truck;3466;decending;autobahn;dawn;dry;car;130;lane_change
+24;26;33;-11;39;car;car;2292;flat;autobahn;day;dry;truck;80;continue
+23,5;35,5;20;-59;42;car;truck;1566;ascending;country_road (separated);night;dry;car;120;continue
+37;48;32,5;-88;66;truck;car;4461;flat;autobahn;night;dry;car;130;continue
+38,5;38;32,5;-129;61;truck;sportscar;2389;ascending;country_road (separated);day;dry;car;120;continue
+27;34;21;-74;52;car;truck;1029;ascending;country_road (separated);day;dry;car;120;decelerate
+24;35;21;-173;41;car;truck;1072;ascending;country_road (separated);day;dry;motorcycle;100;continue
+23,5;32,5;32,5;-15;43;sportscar;car;3135;flat;autobahn;day;dry;truck;100;continue
+32,5;35,5;23;-63;56;car;truck;3750;decending;country_road (separated);night;dry;sportscar;120;decelerate
+23;33;31;-170;40;car;car;3799;ascending;country_road (separated);night;dry;truck;100;continue
+25,5;28,5;23;-123;41;car;truck;850;flat;country_road (separated);day;dry;car;120;continue
+24,5;33,5;19,5;-151;49;car;truck;3367;ascending;country_road (separated);day;dry;car;120;lane_change
+27;36;22,5;-57;51;truck;truck;5552;flat;autobahn;night;dry;car;130;continue
+27,5;32,5;22;-87;48;car;truck;943;flat;country_road (separated);day;dry;motorcycle;120;decelerate
+26;32;22,5;-131;51;car;truck;1211;flat;country_road (separated);dawn;dry;car;100;continue
+37;40;30;-198;65;motorcycle;car;1245;decending;autobahn;night;dry;car;130;decelerate
+36;37;29;-146;62;car;car;1304;decending;country_road (separated);day;dry;car;120;decelerate
+23,5;24,5;28;-107;43;car;car;5238;decending;autobahn;day;dry;truck;80;continue
+32,5;44,5;30;-26;61;truck;car;2871;flat;autobahn;day;rain;sportscar;130;continue
+24;27;22,5;-183;41;truck;truck;2149;flat;country_road (separated);day;dry;sportscar;120;continue
+25;39;31,5;-76;42;car;car;3172;flat;country_road (separated);night;dry;truck;120;continue
+29;33;22,5;-67;40;car;truck;2118;flat;autobahn;day;dry;sportscar;80;continue
+27;40;22;-38;46;car;truck;4989;decending;autobahn;day;dry;car;250;accelerated_lane_change
+23;32;22;-20;40;car;truck;4556;flat;country_road (separated);day;rain;truck;120;continue
+33;35;30;-90;62;car;car;4977;ascending;country_road (separated);day;dry;motorcycle;120;continue
+22,5;23,5;30;-181;38;car;car;4483;flat;autobahn;night;dry;truck;250;continue
+22;37;22;-165;37;car;truck;3104;flat;country_road (separated);day;dry;truck;100;continue
+27,5;31,5;21,5;-130;46;car;truck;1097;flat;autobahn;dawn;dry;car;130;lane_change
+27;36;21;-3;48;sportscar;truck;2520;ascending;country_road (separated);dawn;dry;car;120;accelerated_lane_change
+26,5;37,5;22;-23;49;car;truck;4635;flat;autobahn;day;dry;car;100;accelerated_lane_change
+23;33;29;-108;43;car;car;2854;ascending;country_road (separated);night;dry;truck;120;continue
+37;32;33;-83;53;car;sportscar;1003;ascending;country_road (separated);dawn;dry;motorcycle;100;continue
+25,5;26,5;21,5;-111;49;sportscar;truck;5399;ascending;country_road (separated);day;dry;car;100;continue
+33,5;42,5;31;-187;64;truck;car;3575;decending;country_road (separated);day;dry;car;120;continue
+26,5;29,5;22;-7;52;car;truck;2481;flat;country_road (separated);day;dry;car;100;accelerated_lane_change
+24,5;30,5;31,5;-36;43;truck;car;2064;flat;autobahn;night;dry;truck;130;continue
+27;34;22,5;-175;47;car;truck;1227;flat;country_road (separated);day;dry;car;120;continue
+22,5;27,5;22;-118;45;truck;truck;4518;flat;country_road (separated);night;dry;truck;100;continue
+36;41;31;-118;60;car;car;1370;flat;country_road (separated);day;dry;car;120;continue
+28;32;23;-57;54;truck;truck;4023;decending;country_road (separated);day;fog;car;100;decelerate
+23;30;22,5;-64;43;car;truck;4195;flat;autobahn;day;dry;truck;130;continue
+37;48;30;-8;59;sportscar;car;3095;flat;country_road (separated);day;dry;car;120;continue
+27;40;22,5;-94;44;car;truck;3640;decending;country_road (separated);day;dry;car;120;decelerate
+35,5;37;31,5;-81;51;car;car;1544;flat;country_road (separated);night;fog;car;100;continue
+35;36;30;-182;61;car;car;5206;flat;country_road (separated);dawn;dry;car;120;decelerate
+22,5;24,5;34,5;-185;44;car;motorcycle;4567;decending;country_road (separated);night;snow_ice;truck;120;continue
+35;41;32,5;-176;63;car;car;1000;flat;autobahn;day;dry;car;250;continue
+22;34;20;-91;37;car;truck;1672;ascending;country_road (separated);day;dry;car;120;continue
+34;39;30;-13;56;car;car;5117;flat;autobahn;dusk;dry;car;250;continue
+22,5;24,5;31,5;-172;45;sportscar;car;2062;flat;country_road (separated);day;dry;truck;120;continue
+33,5;35;31;-171;53;car;car;1475;ascending;country_road (separated);day;dry;car;100;continue
+25;26;22,5;-35;40;car;truck;1825;flat;country_road (separated);night;dry;car;120;continue
+22;31;22,5;-170;36;car;truck;2713;flat;autobahn;dusk;dry;truck;250;continue
+31,5;44,5;29;-167;55;motorcycle;car;4983;flat;country_road (separated);day;dry;car;120;continue
+25;34;20,5;-88;44;car;truck;1313;ascending;country_road (separated);dawn;dry;car;120;decelerate
+36;38;32;-29;60;sportscar;car;2730;flat;country_road (separated);day;dry;motorcycle;120;continue
+30,5;43,5;28;-184;49;car;car;4987;flat;country_road (separated);night;dry;sportscar;120;continue
+34;33;30;-55;51;car;car;2227;ascending;autobahn;dawn;dry;car;100;continue
+34,5;43,5;29;-149;60;motorcycle;car;4561;flat;country_road (separated);day;dry;car;120;continue
+23,5;28,5;22;-79;42;car;truck;4834;flat;country_road (separated);day;dry;truck;120;continue
+23,5;27,5;23,5;-141;42;car;truck;3122;flat;country_road (separated);day;dry;truck;120;continue
+38,5;41;30,5;-44;65;sportscar;car;4519;ascending;country_road (separated);night;dry;sportscar;120;continue
+34,5;47,5;32;-27;64;truck;car;4022;flat;country_road (separated);day;rain;car;120;continue
+35;42;30,5;-40;50;car;car;2650;flat;country_road (separated);night;dry;car;100;continue
+25;31;22,5;-47;40;sportscar;truck;2666;flat;country_road (separated);day;rain;motorcycle;120;continue
+37;34;31;-174;63;truck;car;895;flat;country_road (separated);day;rain;car;120;continue
+31;36;28,5;-108;51;car;car;3114;flat;country_road (separated);night;dry;car;100;continue
+37;47;32,5;-15;60;truck;sportscar;1525;flat;country_road (separated);night;dry;car;120;continue
+29;34;23;-141;54;car;truck;2564;flat;country_road (separated);night;dry;car;120;lane_change
+37,5;32;31,5;-104;52;car;motorcycle;1994;flat;country_road (separated);day;dry;car;100;continue
+31;38;28,5;-97;54;car;car;5185;ascending;autobahn;day;dry;car;250;continue
+35;39;29,5;-53;57;car;car;4058;ascending;country_road (separated);night;dry;car;100;continue
+24;37;21;-198;44;car;truck;3504;ascending;autobahn;day;dry;car;250;continue
+22,5;25,5;32,5;-180;40;truck;motorcycle;1203;ascending;country_road (separated);dawn;dry;truck;120;continue
+26,5;38,5;21,5;-75;46;car;truck;4490;flat;country_road (separated);day;dry;car;120;decelerate
+23,5;28,5;22;-71;44;car;truck;3234;flat;autobahn;day;rain;truck;80;continue
+24,5;27,5;29;-127;42;truck;car;3402;flat;country_road (separated);day;dry;truck;120;continue
+39;44;34,5;-99;60;car;sportscar;2260;flat;country_road (separated);night;dry;car;120;continue
+40,5;51;32;-138;62;car;car;1371;flat;country_road (separated);day;dry;sportscar;120;continue
+42;42;35;-115;51;car;sportscar;4493;ascending;country_road (separated);night;rain;car;100;continue
+22;35;22;-137;42;car;truck;1320;flat;country_road (separated);day;dry;truck;120;continue
+29;39;23;-140;51;car;truck;2026;flat;country_road (separated);day;dry;car;100;lane_change
+26;30;21,5;-53;50;sportscar;truck;1851;flat;country_road (separated);day;dry;car;120;lane_change
+27;31;22;-4;44;car;truck;4137;flat;country_road (separated);night;rain;car;100;accelerated_lane_change
+36;49;31,5;-188;65;car;car;4097;decending;autobahn;night;rain;car;130;continue
+33,5;43,5;28;-117;61;car;car;4200;ascending;country_road (separated);day;dry;car;120;continue
+26,5;30,5;22,5;-182;42;car;truck;3890;flat;country_road (separated);night;dry;car;120;lane_change
+22;23;29;-66;41;truck;car;2316;ascending;autobahn;day;dry;truck;250;continue
+22,5;23,5;20,5;-149;40;car;truck;1163;ascending;country_road (separated);night;dry;sportscar;100;continue
+23;28;29;-68;45;car;car;5078;flat;autobahn;day;dry;truck;130;continue
+33;47;29,5;-108;57;car;car;5330;flat;autobahn;day;dry;car;130;continue
+29;34;22,5;-107;51;truck;truck;4578;flat;autobahn;dusk;dry;motorcycle;130;lane_change
+26,5;40,5;21,5;-143;46;car;truck;2233;flat;country_road (separated);dusk;rain;car;120;decelerate
+35;46;29,5;-66;60;car;car;1624;flat;autobahn;dawn;dry;car;130;decelerate
+25,5;37,5;22,5;-18;45;car;truck;1805;flat;country_road (separated);day;rain;car;120;continue
+27,5;27,5;22,5;-146;47;sportscar;truck;1024;flat;autobahn;day;dry;car;100;decelerate
+37,5;38;32,5;-85;59;car;car;3947;flat;country_road (separated);night;dry;car;120;continue
+30,5;39,5;28;-85;50;car;car;4355;flat;autobahn;day;dry;car;130;continue
+23;29;23;-113;43;car;truck;1713;flat;country_road (separated);day;dry;truck;120;continue
+28,5;42,5;21,5;-152;51;truck;truck;1315;flat;country_road (separated);day;dry;car;100;decelerate
+23,5;32,5;20,5;-109;39;motorcycle;truck;4455;ascending;country_road (separated);day;dry;car;100;continue
+35;50;29;-44;59;car;car;4297;decending;country_road (separated);dawn;dry;car;120;accelerated_lane_change
+21;33;21;-71;40;car;truck;3582;ascending;country_road (separated);night;rain;truck;120;continue
+27;36;22,5;-174;48;truck;truck;4986;flat;country_road (separated);night;dry;motorcycle;120;continue
+22,5;36,5;22,5;-32;40;car;truck;4965;decending;country_road (separated);night;dry;truck;120;continue
+24,5;37,5;23;-22;47;motorcycle;truck;4738;flat;country_road (separated);day;rain;truck;100;continue
+33;40;26;-7;53;car;car;5060;ascending;country_road (separated);day;dry;car;100;continue
+23,5;29,5;30;-112;42;car;car;3811;flat;country_road (separated);night;dry;truck;120;continue
+29,5;27;23;-143;41;car;motorcycle;2241;decending;autobahn;dawn;rain;car;80;continue
+25;27;22,5;-57;47;truck;truck;3562;flat;autobahn;night;dry;car;100;continue
+23;30;22,5;-102;41;car;truck;2216;flat;country_road (separated);night;dry;truck;100;continue
+26;27;21,5;-195;48;car;truck;5454;flat;autobahn;dawn;dry;car;130;continue
+24,5;26,5;20,5;-88;43;car;truck;3020;ascending;autobahn;day;dry;motorcycle;100;lane_change
+27,5;29,5;22,5;-84;44;truck;truck;3492;flat;country_road (separated);day;dry;car;120;lane_change
+22,5;26,5;30,5;-200;39;truck;car;1213;flat;country_road (separated);dusk;dry;truck;100;continue
+23;35;29;-147;41;truck;car;3328;decending;country_road (separated);day;dry;truck;100;continue
+34;42;28,5;-27;59;truck;car;1155;decending;country_road (separated);night;dry;car;120;continue
+32,5;41,5;29,5;-47;56;car;car;1476;decending;country_road (separated);night;dry;car;120;continue
+23;24;23;-106;44;motorcycle;truck;2909;flat;country_road (separated);day;fog;truck;120;continue
+35;40;29;-118;50;car;car;1171;decending;country_road (separated);day;dry;car;100;continue
+35;35;29,5;0;65;car;car;5352;flat;autobahn;day;dry;car;130;decelerate
+28,5;42,5;21,5;-137;54;motorcycle;truck;2391;flat;country_road (separated);day;dry;car;100;decelerate
+24;29;21,5;-31;46;car;truck;1986;flat;country_road (separated);day;dry;car;120;continue
+29;28;22,5;-112;44;sportscar;truck;4021;flat;autobahn;dawn;dry;car;80;continue
+28;30;22;-76;49;sportscar;truck;4498;flat;autobahn;day;dry;car;250;lane_change
+34,5;37,5;32;-132;66;motorcycle;car;5015;flat;autobahn;day;rain;car;250;continue
+23;32;22;-187;39;sportscar;truck;3793;flat;country_road (separated);night;dry;truck;120;continue
+35;35;32;-84;60;truck;car;4322;decending;country_road (separated);day;dry;motorcycle;120;continue
+23;29;22;-122;36;sportscar;truck;4379;decending;country_road (separated);day;dry;truck;120;continue
+24,5;26,5;20;-175;46;car;truck;2311;ascending;country_road (separated);day;rain;car;120;decelerate
+24,5;37,5;21,5;-142;44;truck;truck;3796;flat;country_road (separated);day;dry;car;120;continue
+30;42;20,5;-80;54;sportscar;truck;2005;ascending;country_road (separated);dawn;dry;sportscar;120;decelerate
+24;35;22;-59;42;car;truck;1954;flat;autobahn;day;rain;car;250;continue
+33,5;40,5;30;-123;55;car;motorcycle;877;decending;country_road (separated);day;dry;car;120;continue
+26;28;22,5;-76;44;car;truck;1039;flat;autobahn;night;dry;car;250;continue
+22;24;22;-62;43;car;truck;1754;flat;country_road (separated);dusk;dry;truck;120;continue
+25;35;22,5;-56;47;car;truck;799;decending;country_road (separated);day;dry;car;100;continue
+23;34;29;-142;43;car;car;3920;ascending;autobahn;day;dry;truck;130;continue
+34,5;37,5;32;-183;64;truck;car;5602;flat;autobahn;day;rain;car;130;continue
+23,5;29,5;22;-142;42;car;truck;5052;flat;country_road (separated);night;dry;truck;120;continue
+35,5;45,5;31,5;-26;65;car;car;3851;ascending;autobahn;day;dry;motorcycle;250;continue
+28,5;43,5;20,5;-55;52;sportscar;truck;5344;ascending;country_road (separated);night;dry;sportscar;100;accelerated_lane_change
+24;36;22,5;-168;39;car;truck;4570;flat;autobahn;dusk;dry;truck;80;continue
+28;35;21,5;-185;48;car;truck;2015;decending;autobahn;night;dry;car;130;lane_change
+33;46;28,5;-64;63;car;car;3250;flat;autobahn;day;dry;car;130;continue
+25;28;22,5;-141;46;car;truck;2895;flat;country_road (separated);day;dry;car;120;continue
+38,5;46,5;34,5;-50;68;car;sportscar;4352;flat;autobahn;day;dry;car;250;continue
+26;33;22,5;-32;49;truck;truck;708;decending;country_road (separated);day;dry;car;120;continue
+36,5;43;32;-91;63;car;car;954;flat;country_road (separated);day;dry;car;120;continue
+27;32;22,5;-68;51;truck;truck;4787;decending;country_road (separated);night;dry;car;100;decelerate
+34,5;29;31,5;-44;50;car;sportscar;5260;flat;country_road (separated);day;rain;car;100;continue
+27,5;30,5;22,5;-18;52;car;truck;1317;flat;country_road (separated);day;dry;sportscar;100;decelerate
+34,5;36,5;31;-144;62;car;car;1594;flat;autobahn;dusk;dry;car;130;continue
+24;28;20,5;-134;45;motorcycle;truck;829;ascending;country_road (separated);day;dry;car;100;continue
+34,5;39,5;28;-169;62;car;car;5370;ascending;country_road (separated);night;dry;car;120;decelerate
+23;36;29;-169;38;car;car;4118;flat;country_road (separated);day;dry;truck;120;continue
+24,5;36,5;32;-108;41;car;car;1545;flat;autobahn;day;dry;truck;250;continue
+33,5;31;28;-111;48;motorcycle;car;2074;decending;country_road (separated);night;dry;car;100;continue
+38,5;41;32;-7;66;truck;motorcycle;5040;flat;autobahn;dawn;dry;car;130;continue
+26,5;39,5;22,5;-154;52;car;truck;2181;flat;country_road (separated);day;dry;car;100;continue
+37,5;39,5;28,5;-165;72;car;car;4483;flat;autobahn;night;dry;sportscar;250;lane_change
+38,5;40;30,5;-169;59;car;car;1579;decending;country_road (separated);dusk;dry;sportscar;120;continue
+33;44;27,5;-190;63;car;car;5517;ascending;autobahn;day;dry;sportscar;250;continue
+24,5;23,5;31;-49;49;car;car;4010;ascending;autobahn;day;dry;truck;250;continue
+39,5;38;34,5;-99;57;car;motorcycle;4273;flat;country_road (separated);night;fog;car;120;continue
+27;31;22,5;-12;47;car;truck;2441;flat;autobahn;dawn;dry;car;130;accelerated_lane_change
+40;46;34;-106;62;car;sportscar;1820;flat;country_road (separated);day;dry;car;120;continue
+33,5;36;28;-137;42;truck;car;4959;ascending;autobahn;night;dry;car;80;continue
+35;34;28;-134;46;sportscar;car;4695;ascending;autobahn;dusk;dry;car;80;continue
+24,5;30,5;28,5;-116;43;car;car;2548;flat;country_road (separated);day;dry;truck;120;continue
+36,5;40;29,5;-142;61;car;car;4582;decending;country_road (separated);day;dry;sportscar;120;lane_change
+27;31;21,5;-164;51;car;truck;1425;flat;country_road (separated);night;dry;car;120;lane_change
+29;34;22;-196;51;car;truck;2623;flat;country_road (separated);day;dry;car;100;lane_change
+22;30;22;-139;39;car;truck;5259;decending;country_road (separated);day;rain;truck;120;continue
+35,5;51,5;31;-8;59;truck;car;5590;flat;country_road (separated);night;dry;car;120;continue
+37,5;35;32,5;-174;62;motorcycle;car;2780;flat;country_road (separated);day;dry;car;120;continue
+34,5;38,5;32,5;-183;64;truck;car;2933;flat;country_road (separated);day;rain;car;120;continue
+33;31;28;-22;49;motorcycle;car;1424;flat;country_road (separated);dawn;dry;car;100;continue
+22;25;21;-183;42;car;truck;4592;ascending;country_road (separated);day;rain;truck;120;continue
+24;37;22;-118;41;car;truck;4189;decending;country_road (separated);day;dry;truck;120;continue
+24,5;32,5;30;-29;44;truck;car;4452;flat;country_road (separated);day;dry;truck;120;continue
+23;24;20;-76;45;truck;truck;3537;ascending;country_road (separated);day;dry;car;120;continue
+25;35;23;-67;49;sportscar;truck;4248;flat;country_road (separated);day;rain;car;100;continue
+22,5;24,5;28,5;-175;36;car;car;1512;flat;country_road (separated);day;dry;truck;100;continue
+26,5;30,5;23;-196;44;car;truck;3607;flat;autobahn;dawn;dry;car;250;continue
+22,5;27,5;34,5;-68;40;truck;motorcycle;3285;flat;country_road (separated);day;rain;truck;120;continue
+31;40;29;-173;56;truck;car;906;flat;country_road (separated);night;dry;car;100;continue
+27;36;23;-13;50;motorcycle;truck;3799;flat;autobahn;day;dry;car;250;continue
+27;32;22,5;-31;43;car;truck;3547;decending;country_road (separated);day;rain;sportscar;120;decelerate
+34;35;31,5;-37;62;sportscar;car;2144;ascending;country_road (separated);dawn;dry;car;120;continue
+37;40;31,5;-101;64;car;car;5635;flat;autobahn;night;rain;car;250;continue
+38;39;32,5;-179;65;truck;car;4635;flat;country_road (separated);day;dry;car;120;continue
+24,5;34,5;22,5;-185;39;car;truck;4728;flat;autobahn;night;dry;car;130;continue
+22;29;22,5;-135;41;truck;truck;3187;flat;country_road (separated);day;rain;truck;120;continue
+25;25;21;-184;43;car;truck;1372;ascending;autobahn;dusk;dry;car;250;decelerate
+24;30;23;-133;39;sportscar;truck;2346;decending;country_road (separated);day;dry;truck;120;continue
+24;30;22;-85;43;truck;truck;5548;flat;country_road (separated);day;dry;sportscar;100;continue
+24,5;26,5;30;-72;43;truck;car;2401;flat;autobahn;day;rain;truck;130;continue
+24;24;31,5;-83;43;car;car;866;flat;country_road (separated);day;dry;truck;120;continue
+32;44;28;-29;54;truck;car;5214;flat;country_road (separated);dusk;rain;car;120;continue
+23,5;23,5;28;-95;39;truck;car;2653;ascending;country_road (separated);day;dry;truck;120;continue
+25;33;31,5;-133;46;car;car;4335;flat;country_road (separated);day;dry;truck;120;continue
+34;32;29,5;-188;54;truck;car;1131;flat;country_road (separated);day;dry;car;100;continue
+25,5;29,5;22,5;-129;45;truck;truck;5367;decending;autobahn;dusk;dry;sportscar;130;continue
+33;27;31;-80;42;car;motorcycle;5669;decending;autobahn;day;dry;car;80;continue
+34;34;28;-139;53;car;car;4550;flat;country_road (separated);night;rain;car;100;continue
+23,5;36,5;22,5;-101;39;car;truck;4597;flat;country_road (separated);night;dry;truck;100;continue
+37;33;30,5;-122;50;car;motorcycle;5048;ascending;autobahn;night;dry;car;100;continue
+27,5;28,5;22;-26;53;truck;truck;4150;flat;country_road (separated);dawn;dry;car;120;lane_change
+34,5;36;28,5;-77;52;truck;car;3111;ascending;country_road (separated);day;dry;sportscar;100;continue
+22;35;20;-21;35;car;truck;3987;ascending;country_road (separated);day;dry;car;100;continue
+26,5;34,5;21,5;-52;48;truck;truck;5351;flat;country_road (separated);dusk;dry;car;120;decelerate
+27,5;28,5;22,5;-172;51;truck;truck;5543;flat;country_road (separated);dusk;dry;car;120;lane_change
+36;48;30,5;-49;65;truck;car;1825;decending;country_road (separated);night;dry;car;120;continue
+37,5;48,5;31;-110;73;car;car;2004;flat;autobahn;day;dry;car;250;lane_change
+24;35;28,5;-139;43;truck;car;3694;flat;country_road (separated);night;dry;truck;120;continue
+26,5;37,5;23;-16;51;car;truck;1486;decending;country_road (separated);day;dry;car;120;continue
+25;32;29;-185;44;sportscar;car;5545;decending;country_road (separated);night;dry;truck;120;continue
+26,5;41,5;21,5;-49;42;motorcycle;truck;3603;flat;country_road (separated);day;dry;car;100;accelerated_lane_change
+31;32;28,5;-67;48;motorcycle;car;3032;flat;country_road (separated);day;dry;car;100;continue
+21,5;26,5;20,5;-80;41;truck;truck;899;ascending;country_road (separated);day;dry;truck;100;continue
+38;38;31,5;-124;60;car;car;4166;decending;country_road (separated);day;dry;car;120;continue
+24;26;22,5;-98;45;car;truck;3905;flat;autobahn;day;dry;truck;250;continue
+28;33;22,5;-27;50;car;truck;3992;flat;country_road (separated);dawn;dry;car;120;decelerate
+32;41;28;-188;59;car;car;2506;flat;country_road (separated);dawn;dry;car;120;continue
+33,5;38;28;-114;52;car;car;4620;flat;country_road (separated);night;rain;car;100;continue
+24,5;38,5;22;-111;39;car;truck;3779;decending;country_road (separated);day;dry;truck;120;continue
+23,5;30,5;21,5;-82;36;car;truck;4892;flat;country_road (separated);day;dry;car;120;continue
+27,5;34,5;21,5;-94;46;car;truck;2737;ascending;country_road (separated);dawn;dry;car;120;lane_change
+23;33;22;-6;44;sportscar;truck;3363;flat;country_road (separated);night;dry;truck;100;continue
+36;46;32;-191;57;car;car;4918;ascending;country_road (separated);day;rain;car;120;continue
+23,5;29,5;21,5;-81;46;truck;truck;2719;flat;country_road (separated);day;dry;truck;120;continue
+28;31;22,5;-101;47;car;truck;2699;flat;autobahn;day;dry;car;80;continue
+22;23;29;-2;35;car;car;5247;ascending;country_road (separated);day;dry;truck;120;continue
+36,5;28;31;-200;50;truck;car;5445;ascending;country_road (separated);day;dry;car;100;continue
+37,5;37;32;-80;65;car;sportscar;3715;flat;country_road (separated);dusk;dry;car;120;continue
+36;43;31,5;-31;52;truck;car;3759;ascending;country_road (separated);dusk;dry;car;100;continue
+23;36;20;-66;45;motorcycle;truck;4947;ascending;country_road (separated);day;dry;car;120;continue
+34,5;37,5;29;-23;64;truck;car;4249;flat;country_road (separated);night;rain;car;120;continue
+23,5;30,5;22;-170;43;car;truck;1996;flat;autobahn;dusk;dry;truck;130;continue
+23,5;36,5;31,5;-112;46;sportscar;car;5573;flat;country_road (separated);night;dry;truck;120;continue
+28;41;22,5;-57;51;car;truck;2588;decending;autobahn;night;dry;car;130;accelerated_lane_change
+23;31;23;-132;40;car;truck;2454;flat;country_road (separated);night;dry;truck;120;continue
+24;35;23;-78;40;car;truck;3999;flat;country_road (separated);day;dry;truck;100;continue
+26;30;23;-92;50;truck;truck;5075;flat;country_road (separated);day;dry;car;120;continue
+36;45;30;-159;56;motorcycle;car;5380;ascending;country_road (separated);dawn;dry;car;100;continue
+27;27;23;-104;47;truck;truck;5560;decending;country_road (separated);dawn;rain;motorcycle;120;continue
+38;49;33;-3;61;car;car;3385;flat;country_road (separated);dusk;dry;motorcycle;120;continue
+24;33;22;-38;42;car;truck;4793;flat;autobahn;day;dry;car;250;continue
+22,5;24,5;29;-135;38;car;car;1595;decending;country_road (separated);dawn;dry;truck;100;continue
+34,5;43,5;28,5;-63;60;car;car;4393;flat;country_road (separated);night;dry;car;120;decelerate
+38,5;49;32;-45;65;car;car;3795;decending;country_road (separated);day;dry;car;120;continue
+38,5;36;29;-24;51;sportscar;car;2738;ascending;country_road (separated);night;rain;sportscar;100;continue
+34;41;30,5;-64;59;car;sportscar;1040;flat;country_road (separated);day;dry;car;120;continue
+25,5;39,5;22,5;-183;43;motorcycle;truck;1388;flat;country_road (separated);night;dry;car;120;continue
+35;40;30,5;-34;59;sportscar;car;929;flat;autobahn;night;dry;car;250;continue
+24,5;30,5;22;-6;49;car;truck;3568;flat;country_road (separated);night;dry;car;120;continue
+35;44;33;-57;66;car;motorcycle;4573;flat;autobahn;night;rain;car;130;continue
+23,5;37,5;30;-3;41;car;car;1037;flat;country_road (separated);day;dry;truck;120;continue
+29;30;22,5;-168;54;car;truck;5056;flat;country_road (separated);day;dry;car;100;lane_change
+35;43;30;-64;55;truck;car;1973;flat;country_road (separated);day;rain;sportscar;100;continue
+34,5;38,5;32,5;-24;59;car;car;2723;flat;country_road (separated);dawn;dry;motorcycle;120;continue
+24,5;32,5;32;-108;45;car;motorcycle;892;ascending;country_road (separated);day;dry;truck;120;continue
+35,5;30;29,5;-119;56;car;car;4395;decending;country_road (separated);night;dry;car;100;continue
+36;41;29,5;-61;54;truck;car;4887;decending;country_road (separated);day;dry;car;100;continue
+28,5;32,5;22;-88;45;truck;truck;2024;flat;country_road (separated);day;dry;car;120;lane_change
+37;47;29;-91;63;car;car;2928;flat;autobahn;day;dry;sportscar;250;lane_change
+25,5;30,5;21,5;-199;46;truck;truck;1754;flat;autobahn;day;dry;car;130;continue
+24;25;31,5;-115;43;car;car;2119;ascending;country_road (separated);night;dry;truck;120;continue
+25;28;22,5;-84;44;truck;truck;1227;flat;country_road (separated);day;dry;truck;100;continue
+28;36;22;-74;47;car;truck;4542;flat;country_road (separated);day;dry;car;120;lane_change
+25;28;22;-52;41;truck;truck;2482;flat;country_road (separated);day;dry;car;120;continue
+32,5;32;28,5;-190;41;car;car;4710;ascending;autobahn;dusk;fog;motorcycle;80;continue
+24;35;22;-49;43;car;truck;1092;flat;country_road (separated);day;fog;truck;120;continue
+24,5;28,5;30,5;-137;46;sportscar;sportscar;2207;flat;country_road (separated);day;dry;truck;120;continue
+28;30;22;-43;51;car;truck;3835;flat;autobahn;day;dry;car;250;lane_change
+26,5;29,5;22;-70;45;sportscar;truck;929;flat;country_road (separated);day;dry;car;100;decelerate
+26;28;22,5;-70;45;car;truck;2725;flat;country_road (separated);day;dry;car;120;continue
+28,5;43,5;23;-145;49;car;truck;4789;flat;country_road (separated);night;rain;car;120;decelerate
+32,5;35,5;22;-147;57;car;truck;4690;flat;country_road (separated);day;dry;sportscar;120;lane_change
+26;39;22;-79;43;car;truck;785;flat;country_road (separated);day;rain;car;120;decelerate
+23,5;27,5;22;-128;43;truck;truck;5029;flat;country_road (separated);day;dry;truck;120;continue
+34,5;45;30;-152;52;car;car;2366;flat;country_road (separated);night;dry;motorcycle;100;continue
+25,5;31,5;22,5;-154;42;car;truck;4484;flat;country_road (separated);day;dry;car;100;continue
+39;34;33;-161;51;car;motorcycle;3980;flat;country_road (separated);night;rain;car;100;continue
+26;35;22,5;-41;43;car;truck;3280;decending;country_road (separated);day;dry;car;120;accelerated_lane_change
+22,5;26,5;32;-154;40;car;car;3024;flat;country_road (separated);day;dry;truck;120;continue
+28,5;36,5;23;-156;50;truck;truck;1130;flat;country_road (separated);day;rain;car;120;decelerate
+22,5;34,5;30,5;-113;44;motorcycle;sportscar;2386;decending;autobahn;dawn;dry;truck;130;continue
+27;31;23;-192;48;car;truck;919;flat;autobahn;day;rain;car;250;decelerate
+28,5;35,5;22,5;-197;53;car;truck;4918;flat;country_road (separated);night;dry;car;120;lane_change
+28;33;21,5;-70;51;car;truck;4224;flat;country_road (separated);day;dry;car;120;lane_change
+25;34;22;-166;46;truck;truck;2496;decending;country_road (separated);day;dry;car;120;continue
+37,5;39,5;30,5;-113;70;car;car;1428;decending;autobahn;day;dry;car;130;decelerate
+22,5;26,5;22;-38;36;truck;truck;2967;flat;country_road (separated);day;dry;truck;120;continue
+25;37;21,5;-82;47;car;truck;5305;flat;country_road (separated);dusk;dry;car;120;continue
+34;39;29;-92;60;car;car;1575;flat;country_road (separated);day;dry;car;120;continue
+26,5;41,5;22,5;-52;51;car;truck;4613;flat;country_road (separated);day;dry;motorcycle;120;continue
+36;34;31,5;-85;59;car;car;4898;ascending;country_road (separated);dusk;dry;car;120;continue
+37,5;40;32,5;-151;64;car;car;1942;flat;country_road (separated);day;dry;car;120;continue
+23;30;28;-85;41;car;car;756;flat;country_road (separated);dawn;dry;truck;120;continue
+25;25;28,5;-115;45;truck;car;4127;flat;autobahn;day;rain;truck;250;continue
+28;36;22;-111;53;car;truck;5069;decending;country_road (separated);night;dry;car;120;lane_change
+36;35;32;-140;52;truck;car;3374;flat;country_road (separated);day;fog;car;100;continue
+32,5;42,5;28,5;-5;53;car;car;3784;flat;autobahn;day;dry;car;250;continue
+22,5;32,5;22;-144;37;car;truck;2503;flat;country_road (separated);dawn;dry;truck;100;continue
+32;35;29,5;-138;56;motorcycle;car;5108;flat;autobahn;day;dry;car;130;continue
+38,5;45;32,5;-14;60;truck;sportscar;5078;flat;country_road (separated);day;dry;car;120;continue
+24,5;29,5;33,5;-192;44;car;motorcycle;1506;flat;autobahn;night;rain;truck;130;continue
+23,5;34,5;31,5;-133;44;truck;car;1184;flat;country_road (separated);day;dry;truck;100;continue
+28;38;21;-186;49;truck;truck;4144;flat;country_road (separated);dawn;dry;sportscar;120;lane_change
+34,5;38,5;32;-122;59;motorcycle;car;1996;flat;autobahn;day;dry;motorcycle;130;continue
+37;38;30,5;-176;65;truck;car;1205;ascending;autobahn;day;dry;car;250;decelerate
+35;35;32,5;-170;39;car;car;5451;flat;autobahn;day;dry;car;80;continue
+26,5;35,5;22;-112;48;car;truck;5821;flat;autobahn;day;dry;car;250;lane_change
+24;30;22;-92;45;truck;truck;4064;flat;country_road (separated);night;dry;car;100;continue
+21,5;32,5;20;-111;38;car;truck;2405;ascending;country_road (separated);day;dry;truck;120;continue
+20;35;20;-95;36;car;truck;4992;ascending;country_road (separated);day;dry;truck;100;continue
+26;36;23;-68;49;car;truck;2402;flat;autobahn;day;dry;car;130;continue
+36,5;43;33;-2;61;sportscar;car;5080;decending;country_road (separated);day;rain;car;120;continue
+39;49;32;-89;61;motorcycle;car;1705;ascending;country_road (separated);day;dry;car;120;continue
+22,5;30,5;21,5;-88;39;car;truck;4732;flat;autobahn;day;dry;truck;130;continue
+29;31;23;-97;57;car;truck;3688;flat;country_road (separated);dusk;dry;car;100;decelerate
+33;43;28,5;-45;60;car;car;1248;flat;autobahn;day;dry;car;250;continue
+24,5;38,5;22;-112;40;car;truck;3237;decending;autobahn;day;dry;car;130;continue
+24,5;35,5;23;-29;43;car;truck;3798;flat;country_road (separated);day;dry;sportscar;120;continue
+33;46;28;-157;58;sportscar;car;5041;ascending;country_road (separated);day;dry;car;120;continue
+24,5;32,5;21,5;-196;42;truck;truck;2518;flat;country_road (separated);dawn;dry;car;120;continue
+37,5;48;33,5;-103;59;car;sportscar;1526;flat;country_road (separated);night;dry;car;120;continue
+25;29;22,5;-33;47;truck;truck;1375;flat;country_road (separated);day;dry;car;120;continue
+32;38;29,5;-63;55;car;car;859;flat;country_road (separated);dusk;rain;car;100;continue
+36;40;31,5;-179;65;motorcycle;car;1600;flat;autobahn;day;dry;car;250;continue
+25,5;32,5;19,5;-109;42;car;truck;1973;ascending;country_road (separated);night;dry;car;120;decelerate
+36,5;36;31;-38;47;car;motorcycle;3029;flat;autobahn;day;dry;car;80;continue
+32;35;29,5;-12;54;car;car;2605;flat;autobahn;day;dry;motorcycle;250;continue
+34,5;48,5;28,5;-123;61;car;car;4675;flat;autobahn;dusk;dry;car;130;continue
