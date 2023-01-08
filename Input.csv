@@ -1,2 +1,2 @@
 ﻿v;v_left;v_front;d_left;d_front;type_left;type_front;radius_curve(m);slope_street;street_type;time;weather;type_vehicle;speed_limit(km/h);action
-38;40;31;-155;68;car;car;4761;flat;autobahn;night;dry;car;250;lane_change
+36;42;31;-118;60;car;car;1370;flat;country_road (separated);day;dry;car;120;continue
