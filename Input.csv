@@ -1,2 +1,5 @@
 ﻿v;v_left;v_front;d_left;d_front;type_left;type_front;radius_curve(m);slope_street;street_type;time;weather;type_vehicle;speed_limit(km/h);action
 36;42;31;-118;60;car;car;1370;flat;country_road (separated);day;dry;car;120;continue
+37;48;30;-8;59;sportscar;car;3095;flat;country_road (separated);day;dry;car;120;continue
+27;40;22,5;-94;44;car;truck;3640;decending;country_road (separated);day;dry;car;120;decelerate
+35,5;37;31,5;-81;51;car;car;1544;flat;country_road (separated);night;fog;car;100;continue
