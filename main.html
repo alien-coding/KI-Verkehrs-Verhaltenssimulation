@@ -14625,7 +14625,8 @@ Die 'input.csv' hat den Vorteil, dass die Daten leichter eingegeben werden könn
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Importieren-des-Datensatzes">Importieren des Datensatzes<a class="anchor-link" href="#Importieren-des-Datensatzes">&#182;</a></h3>
+<h3 id="Importieren-der-Datens%C3%A4tze">Importieren der Datens&#228;tze<a class="anchor-link" href="#Importieren-der-Datens%C3%A4tze">&#182;</a></h3><p>Hier werden die Datensätze für Training und Test, sowie Daten für die Eingabe zur Prognose einzelner Verkehrssituationen eingelesen.</p>
+
 </div>
 </div>
 </div>
@@ -14716,7 +14717,6 @@ dtype: object</pre>
 <span class="n">df_input</span><span class="p">[</span><span class="s1">&#39;v&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">df_input</span><span class="p">[</span><span class="s1">&#39;v&#39;</span><span class="p">])</span>
 <span class="n">df_input</span><span class="p">[</span><span class="s1">&#39;v_left&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">df_input</span><span class="p">[</span><span class="s1">&#39;v_left&#39;</span><span class="p">])</span>
 <span class="n">df_input</span><span class="p">[</span><span class="s1">&#39;v_front&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">df_input</span><span class="p">[</span><span class="s1">&#39;v_front&#39;</span><span class="p">])</span>
-
 
 <span class="n">df_all</span>
 </pre></div>
@@ -14994,7 +14994,7 @@ dtype: object</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Umrechnen-der-Geschwindigkeiten-von-m/s-auf-km/h">Umrechnen der Geschwindigkeiten von m/s auf km/h<a class="anchor-link" href="#Umrechnen-der-Geschwindigkeiten-von-m/s-auf-km/h">&#182;</a></h3><p>Dies wird gemacht, um einheitliche Werte zu haben. Maximalgeschwindigkeit und die Geschwindigkeiten der Autos unterscheiden sich in der Einheit.</p>
+<h3 id="Umrechnen-der-Geschwindigkeiten-von-m/s-auf-km/h">Umrechnen der Geschwindigkeiten von m/s auf km/h<a class="anchor-link" href="#Umrechnen-der-Geschwindigkeiten-von-m/s-auf-km/h">&#182;</a></h3><p>Dies wird gemacht, um einheitliche Werte zu haben. Maximalgeschwindigkeit (speed limit) und die Geschwindigkeiten der Autos (v, v_left, ...) unterscheiden sich in der Einheit.</p>
 
 </div>
 </div>
@@ -15304,7 +15304,10 @@ dtype: object</pre>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Encoding-der-nicht-nummerischen-Werte">Encoding der nicht-nummerischen Werte<a class="anchor-link" href="#Encoding-der-nicht-nummerischen-Werte">&#182;</a></h3><p>Die folgenden Features sind vom Typ object und benötigen deshalb ein Label Encoding, damit später besser mit ihnen gearbeitet werden kann.
-Das Label Encoding wird mit der Bibliothek scikit learn durchgeführt.</p>
+Dieses Vorgehen ist eine good practice, welche in vielen verschiedenen KI Modellen so oder so ähnlich bereits implementiert ist. Ein Vorteil davon ist das einfachere Vergleichen von zwei Objekten. 
+Außerdem kann, wenn eine Rangordnung zwischen den Optionen besteht, das Attribut so in eine Nominalskala überführt werden. Da jeder nicht-Zahlen Wert encoded wird, ist am Ende der DataFrame einheitlich und konsistent.</p>
+<p>Das Label Encoding wird mit der Bibliothek scikit learn durchgeführt.
+Für diesen Zweck wird das Object <code>type_left_encoder</code> erstellt und gespeichert. Anschließend werden damit die Spalten umgewandelt. In den folgenden Encodings wird identisch vorgegangen, darum wird nicht jedes einzeln beschrieben.</p>
 <h4 id="type-left:">type-left:<a class="anchor-link" href="#type-left:">&#182;</a></h4><ul>
 <li>car -&gt; 0</li>
 <li>motorcycle -&gt; 1</li>
@@ -15686,6 +15689,8 @@ fog          10
 snow_ice      1
 Name: weather, dtype: int64
 {&#39;dry&#39;: 0, &#39;fog&#39;: 1, &#39;rain&#39;: 2, &#39;snow_ice&#39;: 3}
+
+{&#39;dry&#39;: 0, &#39;fog&#39;: 1, &#39;rain&#39;: 2, &#39;snow_ice&#39;: 3}
 </pre>
 </div>
 </div>
@@ -15768,8 +15773,9 @@ Name: type_vehicle, dtype: int64
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Geschwindigkeit-Differenz-Berechnung-zur-action-Bewertung">Geschwindigkeit Differenz Berechnung zur action-Bewertung<a class="anchor-link" href="#Geschwindigkeit-Differenz-Berechnung-zur-action-Bewertung">&#182;</a></h3><p>Dazu werden zum einem die Differenz der Geschwindigkeiten von 'v' und 'v_front' berechnet, um einschätzen zu können, ob die Geschwindigkeit beibehalten werden soll, ob verzögert oder überholt werden soll.</p>
-<p>Außerdem werden 'v' und 'v_left' verglichen, um bewerten zu können, ob und wie (mit oder ohne Beschleunigung) eine Überholung stattfinden soll.</p>
+<h3 id="Geschwindigkeit-Differenz-Berechnung-zur-action-Bewertung">Geschwindigkeit Differenz Berechnung zur action-Bewertung<a class="anchor-link" href="#Geschwindigkeit-Differenz-Berechnung-zur-action-Bewertung">&#182;</a></h3><p>Dazu werden zum einem die Differenz der Geschwindigkeiten von <code>v</code> und <code>v_front</code> berechnet, um einschätzen zu können, ob die Geschwindigkeit beibehalten werden soll, ob verzögert oder überholt werden soll.</p>
+<p>Außerdem werden <code>v</code> und <code>v_left</code> verglichen, um bewerten zu können, ob und wie (mit oder ohne Beschleunigung) eine Überholung stattfinden soll.</p>
+<p><code>v</code> und <code>speed_limit</code> werden verglichen, um festzustellen, wie viel schneller ein Fahrzeug noch fahren könnte, bevor es in den rechtswidrigen Bereich gelangt oder wie viel es abbremsen müsste, um den Bereich zu erreichen.</p>
 
 </div>
 </div>
@@ -15782,13 +15788,12 @@ Name: type_vehicle, dtype: int64
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">df_all</span><span class="p">)</span> <span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-    <span class="n">df_all</span><span class="p">[</span><span class="s1">&#39;delta_vFront&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_all</span><span class="p">[</span><span class="s1">&#39;v&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">df_all</span><span class="p">[</span><span class="s1">&#39;v_front&#39;</span><span class="p">]</span>
-    <span class="n">df_all</span><span class="p">[</span><span class="s1">&#39;delta_vLeft&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_all</span><span class="p">[</span><span class="s1">&#39;v&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">df_all</span><span class="p">[</span><span class="s1">&#39;v_left&#39;</span><span class="p">]</span>
-    <span class="n">df_all</span><span class="p">[</span><span class="s1">&#39;delta_speed_limit&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_all</span><span class="p">[</span><span class="s1">&#39;speed_limit(km/h)&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">df_all</span><span class="p">[</span><span class="s1">&#39;v&#39;</span><span class="p">]</span>
-    <span class="n">df_input</span><span class="p">[</span><span class="s1">&#39;delta_vFront&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_input</span><span class="p">[</span><span class="s1">&#39;v&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">df_input</span><span class="p">[</span><span class="s1">&#39;v_front&#39;</span><span class="p">]</span>
-    <span class="n">df_input</span><span class="p">[</span><span class="s1">&#39;delta_vLeft&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_input</span><span class="p">[</span><span class="s1">&#39;v&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">df_input</span><span class="p">[</span><span class="s1">&#39;v_left&#39;</span><span class="p">]</span>
-    <span class="n">df_input</span><span class="p">[</span><span class="s1">&#39;delta_speed_limit&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_input</span><span class="p">[</span><span class="s1">&#39;speed_limit(km/h)&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">df_input</span><span class="p">[</span><span class="s1">&#39;v&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_all</span><span class="p">[</span><span class="s1">&#39;delta_vFront&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_all</span><span class="p">[</span><span class="s1">&#39;v&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">df_all</span><span class="p">[</span><span class="s1">&#39;v_front&#39;</span><span class="p">]</span>
+<span class="n">df_all</span><span class="p">[</span><span class="s1">&#39;delta_vLeft&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_all</span><span class="p">[</span><span class="s1">&#39;v&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">df_all</span><span class="p">[</span><span class="s1">&#39;v_left&#39;</span><span class="p">]</span>
+<span class="n">df_all</span><span class="p">[</span><span class="s1">&#39;delta_speed_limit&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_all</span><span class="p">[</span><span class="s1">&#39;speed_limit(km/h)&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">df_all</span><span class="p">[</span><span class="s1">&#39;v&#39;</span><span class="p">]</span>
+<span class="n">df_input</span><span class="p">[</span><span class="s1">&#39;delta_vFront&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_input</span><span class="p">[</span><span class="s1">&#39;v&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">df_input</span><span class="p">[</span><span class="s1">&#39;v_front&#39;</span><span class="p">]</span>
+<span class="n">df_input</span><span class="p">[</span><span class="s1">&#39;delta_vLeft&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_input</span><span class="p">[</span><span class="s1">&#39;v&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">df_input</span><span class="p">[</span><span class="s1">&#39;v_left&#39;</span><span class="p">]</span>
+<span class="n">df_input</span><span class="p">[</span><span class="s1">&#39;delta_speed_limit&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_input</span><span class="p">[</span><span class="s1">&#39;speed_limit(km/h)&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">df_input</span><span class="p">[</span><span class="s1">&#39;v&#39;</span><span class="p">]</span>
 
 <span class="n">df_all</span>
 </pre></div>
@@ -16102,7 +16107,7 @@ Name: type_vehicle, dtype: int64
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="action:">action:<a class="anchor-link" href="#action:">&#182;</a></h4><p>One Hot Encoding für alle action Werte um sie einzeln betrachten zu können für die Korrelationen. Dies ist eine Methode, um mit Attributen zu arbeiten, welche keine Nominalskala haben, und die Korrelationen trotzdem interessant sind. Bei anderen Attributen wurde darauf verzichtet, da die Korrelation hier weniger interessant ist. Außerdem wird das Encoding nur in eine Kopie des eigentlichen Datenframes geschrieben, um es später nicht für die Vorhersage zu nutzen, sondern nur für die Korrelationsheatmap.</p>
+<h4 id="action:">action:<a class="anchor-link" href="#action:">&#182;</a></h4><p>One Hot Encoding für alle <code>action</code> Werte um sie einzeln betrachten zu können für die Korrelationen. Dies ist eine Methode, um mit Attributen zu arbeiten, welche keine Nominalskala haben, für die Korrelationen aber trotzdem interessant sind. Bei anderen Attributen wurde darauf verzichtet, da die Korrelationen bei ihnen weniger interessant sind. Außerdem wird das Encoding nur in eine Kopie des eigentlichen Datenframes geschrieben, um es später nicht für die Vorhersage zu nutzen, sondern nur für die unten folgende Korrelationsheatmap.</p>
 
 </div>
 </div>
@@ -16527,10 +16532,10 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Evaluation-der-Korrelationsheatmap">Evaluation der Korrelationsheatmap<a class="anchor-link" href="#Evaluation-der-Korrelationsheatmap">&#182;</a></h3><p>Da die Geschwindigkeit ein zentraler Faktor in der Überholungs-Überlegung ist, wird diese zuerst betrachtet. Sie korreliert in der Heatmap sehr stark mit <code>v_left</code>, <code>v_front</code> und <code>d_front</code>. Außerdem ist auffällig, dass eine negative Korrelation mit <code>type_front</code> und <code>type_vehicle</code> besteht. Diese kann aber wegen nicht vorhandener Rangordnung in den Attributen allerdings nicht in Betracht gezogen werden.</p>
+<h3 id="Evaluation-der-Korrelationsheatmap">Evaluation der Korrelationsheatmap<a class="anchor-link" href="#Evaluation-der-Korrelationsheatmap">&#182;</a></h3><p>Da die Geschwindigkeit ein zentraler Faktor in der Überholungsüberlegung ist, wird diese zuerst betrachtet. Sie korreliert in der Heatmap sehr stark mit <code>v_left</code>, <code>v_front</code> und <code>d_front</code>. Außerdem ist auffällig, dass eine negative Korrelation mit <code>type_front</code> und <code>type_vehicle</code> besteht. Diese kann aber wegen nicht vorhandener Rangordnung in den Attributen allerdings nicht in Betracht gezogen werden.</p>
 <p><code>type_front</code> korreliert zwar mit <code>v</code>, <code>v_left</code>, <code>v_front</code> und <code>d_front</code> negativ, allerdings ist auch hier keine Nominalskala vorhanden.</p>
-<p>Der wichtigste Faktor für das Training ist <code>action</code>. Dieser Wert teilt sich hier in vier verschiedene Attribute auf. Es ist eine leichte Korrelation zwischen der <code>action</code> 'continue' und <code>v_front</code> zu erkennen. Vermutlich wird also eher 'continue' gewählt, wenn der Abstand zum vorrausfahrenden Auto größer ist. 
-<code>v_front</code> korreliert außerdem auch leicht negativ mit den anderen <code>action</code>s, dabei am stärksten mit <code>lane_change</code>. Also je kleiner der Abstand zum vorrausfahrenden Auto ist, desto eher wird abgebremst, Spur gewechselt oder beschleunigt die Spur gewechselt.</p>
+<p>Der wichtigste Faktor für das Training ist <code>action</code>. Dieser Wert teilt sich hier in vier verschiedene Attribute auf. Es ist eine leichte Korrelation zwischen der <code>action</code> 'continue' und <code>v_front</code> zu erkennen. Vermutlich wird also eher 'continue' gewählt, wenn der Abstand zum vorausfahrenden Auto größer ist. 
+<code>v_front</code> korreliert außerdem auch leicht negativ mit den anderen <code>action</code>s, dabei am stärksten mit <code>lane_change</code>. Also je kleiner der Abstand zum vorausfahrenden Auto ist, desto eher wird abgebremst, Spur gewechselt oder beschleunigt die Spur gewechselt.</p>
 <p>Außerdem ist zwischen <code>accelerated_lane_change</code> und <code>d_left</code> eine leichte Korrelation zu erkennen. Je weiter das Auto auf der linken Spur also entfernt ist, desto größer ist die Wahrscheinlichkeit für einen beschleunigten Spurwechsel.</p>
 
 </div>
@@ -16582,7 +16587,7 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Pr%C3%BCfung-auf-Gleichheit">Pr&#252;fung auf Gleichheit<a class="anchor-link" href="#Pr%C3%BCfung-auf-Gleichheit">&#182;</a></h2><p>In dieser Funktion werden die Testdaten auf Gleichheit überprüft. Das bedeutet, dass die Eingabe mit allen Trainingsdaten verglichen wird und auf eine Überseinstimmung untersucht wird. Sobald Trainingsdaten mit den exakt gleichen Werten gefunden wurden, wird die gleiche 'action' für die Testdaten übernommen.</p>
+<h2 id="Pr%C3%BCfung-auf-Gleichheit">Pr&#252;fung auf Gleichheit<a class="anchor-link" href="#Pr%C3%BCfung-auf-Gleichheit">&#182;</a></h2><p>In dieser Funktion werden die Testdaten auf Gleichheit überprüft. Das bedeutet, dass die Eingabe mit allen Trainingsdaten verglichen wird und auf eine Überseinstimmung untersucht wird. Sobald Trainingsdaten mit den exakt gleichen Werten gefunden wurden, wird die gleiche <code>action</code> für die Testdaten übernommen.</p>
 
 </div>
 </div>
@@ -16615,8 +16620,9 @@ class="
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Pr%C3%BCfung-auf-%C3%84hnlichkeit">Pr&#252;fung auf &#196;hnlichkeit<a class="anchor-link" href="#Pr%C3%BCfung-auf-%C3%84hnlichkeit">&#182;</a></h2><p>Nachdem auf Gleichheit geprüft wurde und der Fall auftritt, dass keine genau gleichen Trainingsdaten gefunden wurden, wird auf Ähnlichkeit geprüft. 
-Das heißt, dass alle Attribute verglichen werden und nach dem ähnlichsten Fall in den Trainingsdaten gesucht wird.</p>
-<p>Um am Schluss eine Formel für das Ähnlichkeitsmaß aufstellen zu können, müssen die verschiedenen Attribute alle einen Wert bekommen, der in dem Bereich von 0 und 1 liegt.</p>
+Das heißt, dass alle Attribute der Objekte verglichen werden und nach dem ähnlichsten Fall in den Trainingsdaten gesucht wird.</p>
+<p>Um am Schluss eine Formel für das Ähnlichkeitsmaß zwischen zwei Objekten aufstellen zu können, in dem alle Attribute gleich gewichtet werden können, werden die Wertebereiche normiert.
+Dies bedeutet, dass die verschiedenen Attribute alle einen Wert bekommen, der im Bereich von 0 und 1 liegt.</p>
 
 </div>
 </div>
@@ -16694,7 +16700,8 @@ Das heißt, dass alle Attribute verglichen werden und nach dem ähnlichsten Fall
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Distanzberechnung-der-type_left,-type_front-und-type_vehicle-Fahrzeuge">Distanzberechnung der type_left, type_front und type_vehicle Fahrzeuge<a class="anchor-link" href="#Distanzberechnung-der-type_left,-type_front-und-type_vehicle-Fahrzeuge">&#182;</a></h3><p>0: motorcycle and truck<br>
+<h3 id="Distanzberechnung-der-type_left,-type_front-und-type_vehicle-Fahrzeuge">Distanzberechnung der type_left, type_front und type_vehicle Fahrzeuge<a class="anchor-link" href="#Distanzberechnung-der-type_left,-type_front-und-type_vehicle-Fahrzeuge">&#182;</a></h3><p>Die Ähnlichkeiten wurden hier und in folgenden Funktionen selbst festgelegt, dabei wurde folgende Zuordnung gemacht:</p>
+<p>0: motorcycle and truck<br>
 0.1: sportscar and truck<br>
 0.3: car and motorcycle<br>
 0.5: sportscar and motorcycle<br>
@@ -16751,7 +16758,11 @@ Das heißt, dass alle Attribute verglichen werden und nach dem ähnlichsten Fall
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Distanzberechnung-der-Routenbeschaffenheit">Distanzberechnung der Routenbeschaffenheit<a class="anchor-link" href="#Distanzberechnung-der-Routenbeschaffenheit">&#182;</a></h3>
+<h3 id="Distanzberechnung-der-Routenbeschaffenheit">Distanzberechnung der Routenbeschaffenheit<a class="anchor-link" href="#Distanzberechnung-der-Routenbeschaffenheit">&#182;</a></h3><p>0.5: absteigend und flach <br>
+0.5: aufsteigend und flach <br>
+1: bei gleichen Werten<br>
+Bei den übrig bleibenden Kombinationen wird jeweils 0 zurückgegeben.</p>
+
 </div>
 </div>
 </div>
@@ -16787,7 +16798,8 @@ Das heißt, dass alle Attribute verglichen werden und nach dem ähnlichsten Fall
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Distanzberechnung-der-Stra%C3%9Fenart">Distanzberechnung der Stra&#223;enart<a class="anchor-link" href="#Distanzberechnung-der-Stra%C3%9Fenart">&#182;</a></h3>
+<h3 id="Distanzberechnung-der-Stra%C3%9Fenart">Distanzberechnung der Stra&#223;enart<a class="anchor-link" href="#Distanzberechnung-der-Stra%C3%9Fenart">&#182;</a></h3><p>Bei gleichen Werten wird eine 1 zurückgegeben, bei ungleichen eine 0.</p>
+
 </div>
 </div>
 </div>
@@ -16919,7 +16931,7 @@ Das heißt, dass alle Attribute verglichen werden und nach dem ähnlichsten Fall
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Das-%C3%A4hnlichste-Element-finden">Das &#228;hnlichste Element finden<a class="anchor-link" href="#Das-%C3%A4hnlichste-Element-finden">&#182;</a></h3><p>Zuerst werden die Gewichtungen für jedes einzelne Attribut festgelegt. Anschließend wird die Ähnlichkeit (similarity) berechnet. Dies funktioniert über Gewichtung * Ähnlichkeit, beide Werte zwischen null und eins. Anschließend werden die gewichteten Ähnlichkeiten aller Attribute aufsummiert und mit dem bisher ähnlichsten Fall verglichen. Wenn neue Fall ein höheres Ähnlichkeitsmaß erreicht, wird er selbst zum bisher höchsten gefundenen. Am Ende der Schleife wird die in dem Moment ähnlichste Situation zurückgegeben.</p>
+<h3 id="Das-%C3%A4hnlichste-Element-finden">Das &#228;hnlichste Element finden<a class="anchor-link" href="#Das-%C3%A4hnlichste-Element-finden">&#182;</a></h3><p>Zuerst werden die Gewichtungen für jedes einzelne Attribut festgelegt. Anschließend wird die Ähnlichkeit (similarity) berechnet. Dies funktioniert über Gewichtung * Ähnlichkeit, beides sind Werte zwischen null und eins. Anschließend werden die gewichteten Ähnlichkeiten aller Attribute aufsummiert und mit dem bisher ähnlichsten Fall verglichen. Wenn der neue Fall ein höheres Ähnlichkeitsmaß erreicht, wird er selbst zum Höchsten und damit Ähnlichsten. Am Ende der Schleife wird die ähnlichste Situation zurückgegeben.</p>
 
 </div>
 </div>
@@ -16933,7 +16945,7 @@ Das heißt, dass alle Attribute verglichen werden und nach dem ähnlichsten Fall
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Die-Gewichtung">Die Gewichtung<a class="anchor-link" href="#Die-Gewichtung">&#182;</a></h3><p>Bei der Gewichtung wurden verschiedene Gedankengänge und Ansätze kombiniert. Angefangen wurde mit jedem Gewicht auf eins. Es wurde damit weitergemacht, die Korrelationen aus der Korrelationsheatmap zu interpretieren und die Gewichtungen dort anzupassen, wo Auffälligkeiten gefunden wurden. Dies kann am Beispiel von delta_speed_limit gesehen werden. In der Heatmap ist zu erkennen, dass es mit keiner Option von <code>Action</code> stark korreliert. Die genauen Werte sind 0.0094 (accelerated_lane_change), -0.072 (continue), -0.05 (decelerate) und 0.15 (lange_change). Es wurde also die Gewichtung von <code>delta_speed_limit</code> verringert. Bei diesem Schritt der Korrelationen auf die Gewichtungen zu übertragen ist es wichtig, dass Scheinkorrelationen ausgelassen werden. Ein Beispiel hierfür ist <code>type_vehicle</code>. Es handelt sich hier um keine Nominalskala, Korrelationen sind also prinzipiell nicht aussagekräftig. Trotzdem ergeben sich für die vier Optionen von <code>Action</code> die folgenden Werte: -0.12 (accelerated_lane_change), 0.31 (continue), -0.18 (decelerate) und -0.18 (lange_change).</p>
 <p>Nach dem diese ersten Gewichtungen eingestellt wurden, folgte eine persönliche Einschätzung der Gewichtungen einzelner Attribute. Dies geschah vor allem für Attribute, welche über welche die Korrelation nichts ausgesagt hat. Beispielhaft zu nennen sind hierfür <code>street_type</code>, <code>slope_street</code>, und <code>time</code>. Z.B. bei <code>street_type</code> existieren nur zwei verschiedene Optionen, welche sich nicht groß zu unterscheiden scheinen, darum wurde es heruntergestuft.</p>
-<p>Als letzten Schritt wurde mithilfe der Accuracy versucht, die einzelnen Attribute mittels anderer Gewichtungen auszuprobieren anzupassen. Es wurde also immer die Gewichtung eines einzelnen Attributes verändert, die Accuracy berechnet und abhängig von ihrer Veränderung die Gewichtung des Attributes weiter angepasst. Ging die Accuracy eindeutig hoch, wurde die Gewichtung erhöht. Veränderte sich die Accuracy allerdings nicht, wurde eine niedrigere Gewichtung gewählt, da das Attribut scheinbar kein großen Einfluss auf die Vorhersage hat. Trotz allem wurde minimal eine Gewichtung von 10% gewählt, um dennoch keine Attribute vollständig auszulassen. Dies wäre zwar denkbar, allerdings wird die Vorhersage in diesem Fall weniger konstant. Die Evaluation der einzelnen Testdatenintervalle zeigt, dass diese sich deutlich stärker voneinander unterscheiden. Da die durchschnittliche Accuracy sich allerdings nahezu nicht verändert, wurden alle minimalen Gewichtungen auf 0.1 gesetzt. Allgemein wurde für jedes Attribut ausprobiert, wie sehr sich mit seiner Gewichtung auch die Accuracy ändert, auch für in Schritt eins und zwei bereits angepasste Gewichtungen. Oftmals konnte bei diesen bereits angepassten Gewichtungen aber festgestellt werden, dass sie schon gut angepasst waren (Bspw. bei <code>delta_speed_limit</code> aus Schritt 1 und <code>street_type</code> aus Schritt 2). Überraschend in diesem Schritt war, dass für <code>v_front</code> ein geringeres Gewicht zu einer höheren Accuracy führt. Es wurde eigentlich davon ausgegangen, dass dieses Attribut wichtig für die vorhergesagten <code>Action</code> ist. Mit <code>delta_vLeft</code> verhielt es sich genau so, auch hier wurde fälschlicherweiße erwartet, dass eine höhere Gewichtung zu einer besseren Performance führt.</p>
+<p>Als letzten Schritt wurde mithilfe der Accuracy versucht, die einzelnen Attribute mittels anderer Gewichtungen auszuprobieren anzupassen. Es wurde also immer die Gewichtung eines einzelnen Attributes verändert, die Accuracy berechnet und abhängig von ihrer Veränderung die Gewichtung des Attributes weiter angepasst. Ging die Accuracy eindeutig hoch, wurde die Gewichtung erhöht. Veränderte sich die Accuracy allerdings nicht, wurde eine niedrigere Gewichtung gewählt, da das Attribut scheinbar kein großen Einfluss auf die Vorhersage hat. Trotz allem wurde minimal eine Gewichtung von 10% gewählt, um dennoch keine Attribute vollständig auszulassen. Dies wäre zwar denkbar, allerdings wird die Vorhersage in diesem Fall weniger konstant. Die Evaluation der einzelnen Testdatenintervalle zeigt, dass diese sich deutlich stärker voneinander unterscheiden. Da die durchschnittliche Accuracy sich allerdings nahezu nicht verändert, wurden alle minimalen Gewichtungen auf 0.1 gesetzt. Allgemein wurde für jedes Attribut ausprobiert, wie sehr sich mit seiner Gewichtung auch die Accuracy ändert, auch für in Schritt eins und zwei bereits angepasste Gewichtungen. Oftmals konnte bei diesen bereits angepassten Gewichtungen aber festgestellt werden, dass sie schon gut angepasst waren (Bspw. bei <code>delta_speed_limit</code> aus Schritt 1 und <code>street_type</code> aus Schritt 2). Überraschend in diesem Schritt war, dass für <code>v_front</code> ein geringeres Gewicht zu einer höheren Accuracy führt. Es wurde eigentlich davon ausgegangen, dass dieses Attribut wichtig für die vorhergesagten <code>Action</code> ist. Mit <code>delta_vLeft</code> verhielt es sich genau so, auch hier wurde fälschlicherweise erwartet, dass eine höhere Gewichtung zu einer besseren Performance führt.</p>
 
 </div>
 </div>
@@ -17011,7 +17023,7 @@ Das heißt, dass alle Attribute verglichen werden und nach dem ähnlichsten Fall
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Vorhersage-der-Action">Vorhersage der Action<a class="anchor-link" href="#Vorhersage-der-Action">&#182;</a></h3><p>Es wird zuerst geschaut, ob ein gleicher Fall in den Daten gefunden wird. Falls dies der Fall ist, wird sich gleich verhalten wie in dem gefundenen Fall. Wenn kein identischer Fall vorhanden ist, wird mit <code>check_for_similar</code> nach dem ähnlichsten Fall gesucht. Es wird sich dann so verhalten, wie in dem gefundenen Fall. Für bessere Nachvollziehbarkeit kann die Flag <code>print_output</code> genutzt werden.</p>
+<h3 id="Vorhersage-der-Action">Vorhersage der Action<a class="anchor-link" href="#Vorhersage-der-Action">&#182;</a></h3><p>Es wird zuerst geschaut, ob ein gleicher Fall in den Daten gefunden wird. Falls dies der Fall ist, wird sich gleich verhalten wie in diesem gefundenen Fall. Wenn kein identischer Fall vorhanden ist, wird mit <code>check_for_similar</code> nach dem ähnlichsten Fall gesucht. Für die Vorhersage wird dann die Action des gefundenen Falles genutzt. Für bessere Nachvollziehbarkeit kann die Flag <code>print_output</code> genutzt werden, welche die gesamten Falldaten ausgibt. Somit kann die Ähnlichkeit manuell nachvollzogen werden.</p>
 
 </div>
 </div>
@@ -17080,8 +17092,9 @@ Predicted action for input case nr.  4 :  continue  		 Real action:  continue
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Berechnung-der-Accuracy">Berechnung der Accuracy<a class="anchor-link" href="#Berechnung-der-Accuracy">&#182;</a></h3><p>Dabei wird die Genauigkeit des Modells berechnet, indem alle mittels Cross-Validation die fünf Durchläufe mit den unterschiedlichen Test- und Trainingsdaten aufsummiert werden und dann durch die Länge, also die Anzahl der Durchläufe, geteilt wird.</p>
-<p>Außerdem wird nach der Suche einer Eingabe, die Eingabe und die Lösung des ähnlichen Falls aus den Trainingsdaten weiter verwendet. Dafür werden die Daten dem Trainingsdatensatz hinzugefügt.</p>
+<h3 id="Berechnung-der-Accuracy">Berechnung der Accuracy<a class="anchor-link" href="#Berechnung-der-Accuracy">&#182;</a></h3><p>Hier wird die Genauigkeit des Modells berechnet, indem mittels Cross-Validation die unterschiedlichen Durchläufe aufsummiert werden und dann durch die Länge, also die Anzahl der Durchläufe, geteilt wird. 
+Im genauen werden immer 100 Einträge aus den Daten als Test-Daten verwendet, der Rest (401) als Trainingsdaten. Dies geschieht also fünf mal hintereinander, für jedes Intervall der Testdaten einmal (0-100, 101-200, ..., 401-500).</p>
+<p>Außerdem wird beim testen das jeweilige Testobjekt nach der Vorhersage zu den Trainingsdaten hinzugefügt, wenn die flag <code>add_test_line</code> gesetzt ist. Dies ist nützlich, um den Datensatz ständig zu erweitern und damit eine größere Datengrundlage zu haben.</p>
 
 </div>
 </div>
@@ -17115,7 +17128,7 @@ Predicted action for input case nr.  4 :  continue  		 Real action:  continue
         <span class="n">accuracy_sum</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">accuracy</span><span class="p">)</span>
     <span class="n">accuracy_average</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">accuracy_sum</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">accuracy_sum</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;accuracy total: &#39;</span><span class="p">,</span> <span class="n">accuracy_average</span><span class="p">)</span>
-<span class="n">evaluate_accuracy</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">evaluate_accuracy</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -17138,11 +17151,11 @@ Predicted action for input case nr.  4 :  continue  		 Real action:  continue
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>accuracy  1  is:  0.8  /  100
-accuracy  2  is:  0.78  /  100
+accuracy  2  is:  0.79  /  100
 accuracy  3  is:  0.85  /  100
-accuracy  4  is:  0.81  /  100
-accuracy  5  is:  0.87  /  100
-accuracy total:  0.8220000000000001
+accuracy  4  is:  0.79  /  100
+accuracy  5  is:  0.89  /  100
+accuracy total:  0.8240000000000001
 </pre>
 </div>
 </div>
